@@ -1,0 +1,119 @@
+$start      : 0; // Inicio do loop
+$end        : 5; // final do loop
+$count      : 0; // count do loop next
+$countprev  : 0; // count do loop prev
+
+[class^="half__slider"] {
+  transition: all .233s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+[class^="half__carousel"] {
+  display: none;
+  z-index: 2;
+}
+
+// Controla fluxo do BTN NEXT
+@for $next from $start through $end {
+    // mostra foto do link next
+    #half__carousel--next#{$next}:checked ~ .half__slider-#{$next},{
+      opacity: 1;
+    }
+    // mostra proximo next
+    #half__carousel--next#{$next}:checked ~ .half__carousel--next#{$next + 1}, {
+      display: block;
+    }
+    // mostra antigo prev
+    #half__carousel--next#{$next}:checked + .half__carousel--prev#{$next - 1}, {
+      display: block;
+    }
+}
+
+// Controla fluxo do BTN PREV
+@for $prev from $start through $end {
+    // mostra foto do link prev
+    #half__carousel--prev#{$prev}:checked ~ .half__slider-#{$prev},{
+      opacity: 1;
+    }
+    // mostra proximo next
+    #half__carousel--prev#{$prev}:checked ~ .half__carousel--next#{$prev + 1}, {
+      display: block;
+    }
+    // mostra proximo prev
+    #half__carousel--prev#{$prev}:checked ~ .half__carousel--prev#{$prev - 1}, {
+      display: block;
+    }
+}
+
+.half__carousel-container{
+  transition: all .233s ease-in-out;
+}
+
+.half__image-slider {
+  width:100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.half__carousel-buttom {
+  height: 75px;
+  width: 35px;
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  border-radius: 2px;
+  pointer-events: all;
+  background-repeat: no-repeat;
+  z-index: 10;
+  margin-top: -37px;
+}
+
+.half__prev-button {
+  @extend .half__carousel-buttom;
+  left: 0;
+}
+.half__prev-button::before {
+  content: "➔";
+  display:block;
+  color: #fff;
+  padding-left: 10px;
+  margin-top: 30px;
+  transform: rotate(180deg);
+}
+.half__next-button {
+  @extend .half__carousel-buttom;
+  right: 0;
+}
+.half__next-button::before {
+  color: #fff;
+  content: "➔";
+  display:block;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.half__first, .half__last {
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
+
+.half__water-mark {
+	position: absolute;
+    z-index: 1;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-top: -50px;
+    color: #fff;
+}
