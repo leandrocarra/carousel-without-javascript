@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body>
+    <!-- NESSE PRIMEIRO BLOCO O LABEL DE PREV DEVE RECEBER O ULTIMO ITEM DO ARRAY
+    PARA ELE SABER QUAL O CONTAINER MOSTRAR QUANDO O USER CLICAR EM VOLTAR LOGO
+    NA PRIMEIRA IMAGEM, E O INPUT 0 DEVE RECEBER A PROPRIEDADE CHECKED -->
+
+    <input id="half__carousel--prev0" class="half-input" type="radio" name="carousel"/>
+    <input id="half__carousel--next0" class="half-input" type="radio" name="carousel" checked/>
+    <!-- PREV COM ULTIMO DO ARRAY -->
+    <label for="half__carousel--prev5" class="half__carousel--prev5 half__prev-button"></label>
+    <label for="half__carousel--next0" class="half__carousel--next0 half__next-button"></label>
+
+
+    <!-- DEMAIS BLOCOS SEGUEM A LOGICA NORMAL, MAS SEMPRE LEMBRABDO QUE PREV RECEBE COUNT -1 -->
+    <input id="half__carousel--prev1" class="half-input" type="radio" name="carousel" />
+    <input id="half__carousel--next1" class="half-input" type="radio" name="carousel"/>
+    <label for="half__carousel--prev0" class="half__carousel--prev0 half__prev-button"></label>
+    <label for="half__carousel--next1" class="half__carousel--next1 half__next-button"></label>
+
+    <input id="half__carousel--prev2" class="half-input" type="radio" name="carousel"/>
+    <input id="half__carousel--next2" class="half-input" type="radio" name="carousel"/>
+    <label for="half__carousel--prev1" class="half__carousel--prev1 half__prev-button"></label>
+    <label for="half__carousel--next2" class="half__carousel--next2 half__next-button"></label>
+
+    <input id="half__carousel--prev3" class="half-input" type="radio" name="carousel"/>
+    <input id="half__carousel--next3" class="half-input" type="radio" name="carousel"/>
+    <label for="half__carousel--prev2" class="half__carousel--prev2 half__prev-button"></label>
+    <label for="half__carousel--next3" class="half__carousel--next3 half__next-button"></label>
+
+    <input id="half__carousel--prev4" class="half-input" type="radio" name="carousel"/>
+    <input id="half__carousel--next4" class="half-input" type="radio" name="carousel"/>
+    <label for="half__carousel--prev3" class="half__carousel--prev3 half__prev-button"></label>
+    <label for="half__carousel--next4" class="half__carousel--next4 half__next-button"></label>
+
+    <input id="half__carousel--prev5" class="half-input" type="radio" name="carousel"/>
+    <input id="half__carousel--next5" class="half-input" type="radio" name="carousel"/>
+    <label for="half__carousel--prev4" class="half__carousel--prev4 half__prev-button"></label>
+    <label for="half__carousel--next5" class="half__carousel--next5 half__next-button"></label>
+
+
+    <!-- AQUI SEMPRE O PRIMEIRO DO ARRAY -->
+    <label for="half__carousel--next0" class="half__carousel--next0 half__next-button half__first"></label>
+    <!-- AQUI SEMPRE O ULTIMO DO ARRAY -->
+    <label for="half__carousel--prev5" class="half__carousel--prev5 half__prev-button half__last"></label>
+
+    <div class="half__slider-0">
+      <span class="half__water-mark">0</span>
+      <span class="half__image-slider" style="
+      background-image: url(https://image.slidesharecdn.com/bestimages4u-24x7-091001222519-phpapp02/95/best-pictures-high-resolution-images-quality-backgrounds-30-728.jpg?cb=1254435984);">
+      </span>
+    </div>
+    <div class="half__slider-1">
+      <span class="half__water-mark">1</span>
+      <span class="half__image-slider" style="
+      background-image: url(https://i.pinimg.com/736x/b8/04/b9/b804b904bf172a5ec55bff22382995f3--nature-pictures-travel-pictures.jpg);">
+      </span>
+    </div>
+    <div class="half__slider-2">
+      <span class="half__water-mark">2</span>
+      <span class="half__image-slider" style="
+      background-image: url(http://t.wallpaperweb.org/wallpaper/nature/1600x1200/Pacific_Breezes_Kalalau_Valley_Kauai_Hawaii.jpg);">
+      </span>
+    </div>
+    <div class="half__slider-3">
+      <span class="half__water-mark">3</span>
+      <span class="half__image-slider" style="
+      background-image: url(http://24.media.tumblr.com/tumblr_m3pl5kz9Kq1ruhb55o1_500.jpg);">
+      </span>
+    </div>
+    <div class="half__slider-4">
+      <span class="half__water-mark">4</span>
+      <span class="half__image-slider" style="
+      background-image: url(http://hq-wall.net/i/med_thumb/02/06/Winding_Stream,_Banff_National_Park,_Alberta,_Canada_-_1600x593036.jpg);">
+      </span>
+    </div>
+    <div class="half__slider-5">
+      <span class="half__water-mark">5</span>
+      <span class="half__image-slider" style="
+      background-image: url(https://i.pinimg.com/736x/c4/5f/f2/c45ff23087b1fb29c4561e253b6bc147.jpg);">
+      </span>
+    </div>         
+  </body>
+</html>
