@@ -1,0 +1,229 @@
+@charset "UTF-8";
+[class^="half__slider"] {
+  transition: all .233s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+[class^="half__carousel"] {
+  display: none;
+  z-index: 2;
+}
+
+#half__carousel--next0:checked ~ .half__slider-0 {
+  opacity: 1;
+}
+
+#half__carousel--next0:checked ~ .half__carousel--next1 {
+  display: block;
+}
+
+#half__carousel--next0:checked + .half__carousel--prev-1 {
+  display: block;
+}
+
+#half__carousel--next1:checked ~ .half__slider-1 {
+  opacity: 1;
+}
+
+#half__carousel--next1:checked ~ .half__carousel--next2 {
+  display: block;
+}
+
+#half__carousel--next1:checked + .half__carousel--prev0 {
+  display: block;
+}
+
+#half__carousel--next2:checked ~ .half__slider-2 {
+  opacity: 1;
+}
+
+#half__carousel--next2:checked ~ .half__carousel--next3 {
+  display: block;
+}
+
+#half__carousel--next2:checked + .half__carousel--prev1 {
+  display: block;
+}
+
+#half__carousel--next3:checked ~ .half__slider-3 {
+  opacity: 1;
+}
+
+#half__carousel--next3:checked ~ .half__carousel--next4 {
+  display: block;
+}
+
+#half__carousel--next3:checked + .half__carousel--prev2 {
+  display: block;
+}
+
+#half__carousel--next4:checked ~ .half__slider-4 {
+  opacity: 1;
+}
+
+#half__carousel--next4:checked ~ .half__carousel--next5 {
+  display: block;
+}
+
+#half__carousel--next4:checked + .half__carousel--prev3 {
+  display: block;
+}
+
+#half__carousel--next5:checked ~ .half__slider-5 {
+  opacity: 1;
+}
+
+#half__carousel--next5:checked ~ .half__carousel--next6 {
+  display: block;
+}
+
+#half__carousel--next5:checked + .half__carousel--prev4 {
+  display: block;
+}
+
+#half__carousel--prev0:checked ~ .half__slider-0 {
+  opacity: 1;
+}
+
+#half__carousel--prev0:checked ~ .half__carousel--next1 {
+  display: block;
+}
+
+#half__carousel--prev0:checked ~ .half__carousel--prev-1 {
+  display: block;
+}
+
+#half__carousel--prev1:checked ~ .half__slider-1 {
+  opacity: 1;
+}
+
+#half__carousel--prev1:checked ~ .half__carousel--next2 {
+  display: block;
+}
+
+#half__carousel--prev1:checked ~ .half__carousel--prev0 {
+  display: block;
+}
+
+#half__carousel--prev2:checked ~ .half__slider-2 {
+  opacity: 1;
+}
+
+#half__carousel--prev2:checked ~ .half__carousel--next3 {
+  display: block;
+}
+
+#half__carousel--prev2:checked ~ .half__carousel--prev1 {
+  display: block;
+}
+
+#half__carousel--prev3:checked ~ .half__slider-3 {
+  opacity: 1;
+}
+
+#half__carousel--prev3:checked ~ .half__carousel--next4 {
+  display: block;
+}
+
+#half__carousel--prev3:checked ~ .half__carousel--prev2 {
+  display: block;
+}
+
+#half__carousel--prev4:checked ~ .half__slider-4 {
+  opacity: 1;
+}
+
+#half__carousel--prev4:checked ~ .half__carousel--next5 {
+  display: block;
+}
+
+#half__carousel--prev4:checked ~ .half__carousel--prev3 {
+  display: block;
+}
+
+#half__carousel--prev5:checked ~ .half__slider-5 {
+  opacity: 1;
+}
+
+#half__carousel--prev5:checked ~ .half__carousel--next6 {
+  display: block;
+}
+
+#half__carousel--prev5:checked ~ .half__carousel--prev4 {
+  display: block;
+}
+
+.half__carousel-container {
+  transition: all .233s ease-in-out;
+}
+
+.half__image-slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.half__carousel-buttom, .half__prev-button, .half__next-button {
+  height: 75px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  border-radius: 2px;
+  pointer-events: all;
+  background-repeat: no-repeat;
+  z-index: 10;
+  margin-top: -37px;
+}
+
+.half__prev-button {
+  left: 0;
+}
+
+.half__prev-button::before {
+  content: "➔";
+  display: block;
+  color: #fff;
+  padding-left: 10px;
+  margin-top: 30px;
+  transform: rotate(180deg);
+}
+
+.half__next-button {
+  right: 0;
+}
+
+.half__next-button::before {
+  color: #fff;
+  content: "➔";
+  display: block;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.half__first, .half__last {
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
+
+.half__water-mark {
+  position: absolute;
+  z-index: 1;
+  font-size: 100px;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-top: -50px;
+  color: #fff;
+}
