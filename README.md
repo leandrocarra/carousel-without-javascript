@@ -2,7 +2,7 @@
 
 Um carousel feito somente com css, pode ser usado em sites mobile e em sites resposivos.
 
-## Preriquisitos
+## Pré-requisito
 
 Pre-processador scss
 
