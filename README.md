@@ -43,4 +43,4 @@ espera receber quantas vezes o loop vai criar as classes que irão controlar o n
 Uma vez com a quantidade do array no html, basta apenas seguir o exemplo no index.html e tudo funcionará.
 
 ### Veja o exemplo completo
-https://goo.gl/QviTb8
+Aqui https://goo.gl/QviTb8 ou aqui https://leandrocarra.github.io/carousel-without-javascript/
