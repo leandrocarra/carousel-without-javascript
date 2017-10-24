@@ -1,6 +1,6 @@
 # Carousel Without Javascript
 
-Um carousel feito somente com css, pode ser usado em sites mobile e em sites responsivos.
+Um carousel feito somente com css, pode ser usado em sites normais, mobile e responsivos.
 
 ## Pré-requisito
 
